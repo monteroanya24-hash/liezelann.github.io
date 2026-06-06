@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VA Pro — Virtual Assistant Portfolio</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Liezel Ann | Strategic Marketing Virtual Assistant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -74,12 +74,6 @@
             border: 1px solid rgba(147, 197, 253, 0.08);
         }
         
-        .glass-light {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-        }
-        
         /* Reveal animation */
         .reveal {
             opacity: 0;
@@ -89,14 +83,6 @@
         .reveal.active {
             opacity: 1;
             transform: translateY(0);
-        }
-        
-        /* Gradient text */
-        .gradient-text {
-            background: linear-gradient(135deg, #60a5fa, #3b82f6, #2563eb);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
         }
         
         /* Card hover */
@@ -143,9 +129,6 @@
             border-bottom: 1px solid rgba(147, 197, 253, 0.06);
         }
         
-        /* Section spacing */
-        section { position: relative; z-index: 1; }
-        
         /* Hero photo */
         .hero-photo {
             transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.5s ease;
@@ -155,60 +138,33 @@
             box-shadow: 0 0 60px -10px rgba(59, 130, 246, 0.5);
         }
         
-        /* ─── Refined Text Palette (no pure white) ─── */
+        /* Refined Text Palette */
         :root {
-            --text-heading: #e8eef9;     /* Soft warm off-white for headings */
-            --text-primary: #cdd9ec;     /* Light blue-gray for primary text */
-            --text-secondary: #9aafc9;   /* Muted blue-gray for body */
-            --text-muted: #6b829e;       /* Dimmer for captions/meta */
-            --text-accent: #93c5fd;      /* Soft blue accent */
+            --text-heading: #e8eef9;
+            --text-primary: #cdd9ec;
+            --text-secondary: #9aafc9;
+            --text-accent: #93c5fd;
         }
         body { color: var(--text-primary); }
-        
-        /* Override Tailwind text-white with softer tone */
         .text-white { color: var(--text-heading) !important; }
-        
-        /* Headings get the warmer off-white */
         h1, h2, h3, h4, h5, h6 { color: var(--text-heading); letter-spacing: -0.01em; }
         
-        /* Refined whites/opacities → softer blue-grays */
-        .text-white\/90 { color: #dde6f4 !important; }
-        .text-white\/80 { color: #c5d3e8 !important; }
-        .text-white\/70 { color: #a8bcd6 !important; }
-        .text-white\/60 { color: #94a9c4 !important; }
-        .text-white\/50 { color: #7e93af !important; }
-        .text-white\/40 { color: #6b8099 !important; }
-        .text-white\/30 { color: #5a6f88 !important; }
-        
-        /* Hover states */
-        .hover\:text-white:hover { color: var(--text-heading) !important; }
-        
-        /* Smoother gradient text */
         .gradient-text {
             background: linear-gradient(135deg, #93c5fd 0%, #60a5fa 50%, #3b82f6 100%) !important;
             -webkit-background-clip: text !important;
             -webkit-text-fill-color: transparent !important;
             background-clip: text !important;
         }
-        
-        /* Better readability with subtle text shadow on heading */
-        h1, h2 { text-shadow: 0 1px 30px rgba(15, 23, 42, 0.5); }
-        
-        /* Paragraph spacing for breathability */
-        p { letter-spacing: 0.005em; }
     </style>
 </head>
 
 <body class="antialiased">
 
-    <!-- 3D Background -->
     <canvas id="three-canvas"></canvas>
 
-    <!-- ==================== HEADER ==================== -->
     <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
-                <!-- Logo -->
                 <a href="#hero" class="flex items-center gap-3 group">
                     <div class="w-10 h-10 bg-gradient-to-br from-brand-400 to-brand-600 rounded-xl flex items-center justify-center shadow-lg shadow-brand-500/30 group-hover:shadow-brand-500/50 transition-shadow">
                         <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -218,27 +174,22 @@
                     <span class="text-xl font-bold text-white">Liezel<span class="text-brand-400">Ann</span></span>
                 </a>
 
-                <!-- Desktop Nav -->
                 <nav class="hidden md:flex items-center gap-8">
                     <a href="#about" class="nav-link text-sm font-medium text-white/70 hover:text-white transition-colors">About</a>
                     <a href="#services" class="nav-link text-sm font-medium text-white/70 hover:text-white transition-colors">Services</a>
-                    <a href="#work" class="nav-link text-sm font-medium text-white/70 hover:text-white transition-colors">Work</a>
+                    <a href="#work" class="nav-link text-sm font-medium text-white/70 hover:text-white transition-colors">Experience</a>
                     <a href="#contact" class="nav-link text-sm font-medium text-white/70 hover:text-white transition-colors">Contact</a>
                     <a href="#contact" class="hidden lg:inline-flex items-center gap-2 bg-brand-500 text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-brand-400 transition-all shadow-lg shadow-brand-500/30">
-                        Get Started
+                        Work With Me
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
                     </a>
                 </nav>
 
-                <!-- Mobile Hamburger -->
                 <button id="menuToggle" class="md:hidden hamburger p-2" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span></span><span></span><span></span>
                 </button>
             </div>
 
-            <!-- Mobile Menu -->
             <div id="mobileMenu" class="mobile-menu md:hidden">
                 <div class="pb-6 pt-2 space-y-1 glass rounded-2xl mt-2 shadow-2xl">
                     <a href="#about" class="block px-5 py-3 text-white/80 font-medium hover:bg-white/10 rounded-xl transition-colors">About</a>
@@ -253,395 +204,246 @@
         </div>
     </header>
 
-    <!-- ==================== HERO ==================== -->
     <section id="hero" class="min-h-screen flex items-center justify-center relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 lg:px-8 py-32 relative z-10">
             <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-                <!-- Text Content -->
                 <div class="order-2 lg:order-1">
                     <div class="reveal mb-6">
                         <span class="inline-flex items-center gap-2 glass px-4 py-2 rounded-full text-sm text-brand-300">
                             <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-                            Available for new projects
+                            Accepting 2 New Clients
                         </span>
                     </div>
                     
                     <h1 class="reveal text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[0.95] mb-8">
-                        Your Marketing<br>
+                        Strategic Marketing<br>
                         <span class="gradient-text">Virtual</span><br>
                         Assistant
                     </h1>
                     
                     <p class="reveal text-lg md:text-xl text-white/60 leading-relaxed mb-10 max-w-xl">
-                        Hi, I'm <strong class="text-brand-300">Liezel Ann</strong> — I help businesses grow through smart marketing strategies, in-depth research, and creative digital execution.
+                        I bridge the gap between high-level <strong class="text-brand-300">marketing strategy</strong> and flawless <strong class="text-brand-300">digital execution</strong> for ambitious business leaders.
                     </p>
 
                     <div class="reveal flex flex-col sm:flex-row gap-4">
                         <a href="#contact" class="inline-flex items-center justify-center gap-2 bg-brand-500 text-white px-8 py-4 rounded-2xl font-bold hover:bg-brand-400 transition-all shadow-xl shadow-brand-500/30 hover:-translate-y-0.5">
-                            Book Free Consultation
+                            Scale Your Growth
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
                         </a>
                         <a href="#work" class="inline-flex items-center justify-center gap-2 glass text-white px-8 py-4 rounded-2xl font-semibold hover:bg-white/10 transition-all">
-                            View Work
+                            View Performance
                         </a>
                     </div>
 
-                    <!-- Stats -->
                     <div class="reveal grid grid-cols-3 gap-6 sm:gap-8 mt-16 pt-10 border-t border-white/10">
                         <div>
-                            <div class="text-3xl md:text-4xl font-bold text-white counter-value" data-target="50">0</div>
-                            <div class="text-white/40 text-sm mt-1">Happy Clients</div>
-                        </div>
-                        <div>
-                            <div class="text-3xl md:text-4xl font-bold text-white counter-value" data-target="120">0</div>
-                            <div class="text-white/40 text-sm mt-1">Campaigns Run</div>
+                            <div class="text-3xl md:text-4xl font-bold text-white counter-value" data-target="150">0</div>
+                            <div class="text-white/40 text-sm mt-1">Campaigns Managed</div>
                         </div>
                         <div>
                             <div class="text-3xl md:text-4xl font-bold text-white counter-value" data-target="5">0</div>
-                            <div class="text-white/40 text-sm mt-1">Years Exp.</div>
+                            <div class="text-white/40 text-sm mt-1">Years Experience</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl md:text-4xl font-bold text-white counter-value" data-target="12">0</div>
+                            <div class="text-white/40 text-sm mt-1">Niches Served</div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Photo -->
                 <div class="order-1 lg:order-2 reveal flex justify-center lg:justify-end">
                     <div class="relative">
-                        <!-- Glowing ring behind photo -->
                         <div class="absolute -inset-4 bg-gradient-to-br from-brand-400/30 via-brand-600/20 to-brand-400/30 rounded-full blur-2xl animate-pulse"></div>
-                        <div class="absolute -inset-1 bg-gradient-to-br from-brand-400 to-brand-600 rounded-full opacity-20"></div>
-                        
-                        <!-- Photo container -->
-                        <div class="relative w-56 h-56 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden border-2 border-brand-400/30 shadow-2xl shadow-brand-500/20 hero-photo">
-                            <img src="profile1.jpeg" alt="Liezel Ann Villanueva — Marketing Virtual Assistant" class="w-full h-full object-cover" style="object-position: 50% 25%;">
+                        <div class="relative w-56 h-56 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden border-2 border-brand-400/30 shadow-2xl hero-photo">
+                            <img src="profile1.jpeg" alt="Liezel Ann - Marketing VA" class="w-full h-full object-cover" style="object-position: 50% 25%;">
                         </div>
-
-                        <!-- Floating badge -->
                         <div class="absolute -bottom-3 left-1/2 -translate-x-1/2 glass px-5 py-2.5 rounded-full text-sm font-semibold text-white shadow-xl whitespace-nowrap">
                             <span class="gradient-text font-bold">Liezel Ann Villanueva</span>
                         </div>
-
-                        <!-- Decorative dots -->
-                        <div class="absolute -top-2 -right-2 w-5 h-5 bg-brand-400 rounded-full opacity-60 animate-bounce" style="animation-duration:3s;"></div>
-                        <div class="absolute top-1/4 -left-4 w-3 h-3 bg-brand-300 rounded-full opacity-40 animate-bounce" style="animation-duration:4s;animation-delay:1s;"></div>
-                        <div class="absolute bottom-1/4 -right-3 w-4 h-4 bg-brand-500 rounded-full opacity-50 animate-bounce" style="animation-duration:3.5s;animation-delay:0.5s;"></div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- Scroll indicator -->
-        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-            <svg class="w-6 h-6 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
-        </div>
     </section>
 
-    <!-- ==================== ABOUT ==================== -->
     <section id="about" class="py-24 lg:py-32">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="grid lg:grid-cols-5 gap-12 lg:gap-16 items-start">
-                <!-- Photo Card -->
                 <div class="reveal lg:col-span-2 lg:sticky lg:top-28">
                     <div class="max-w-sm mx-auto relative">
                         <div class="absolute inset-0 bg-gradient-to-br from-brand-500/30 to-brand-700/30 rounded-3xl rotate-3 blur-xl"></div>
                         <div class="relative glass rounded-3xl overflow-hidden">
                             <div class="aspect-[3/4] relative">
-                                <img src="profile2.jpeg" alt="Liezel Ann Villanueva — Marketing Virtual Assistant" class="w-full h-full object-cover" style="object-position: 50% 20%;">
+                                <img src="profile2.jpeg" alt="Liezel Ann Villanueva" class="w-full h-full object-cover" style="object-position: 50% 20%;">
                                 <div class="absolute inset-0 bg-gradient-to-t from-brand-950/95 via-brand-950/30 to-transparent"></div>
                             </div>
                             <div class="absolute bottom-0 left-0 right-0 p-6 text-center">
-                                <h3 class="text-2xl font-bold">Liezel Ann Villanueva</h3>
-                                <p class="text-brand-300 mt-1 text-sm">Marketing Virtual Assistant</p>
-                                <div class="flex items-center justify-center gap-2 mt-3 text-green-400 text-sm">
-                                    <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-                                    Available Now
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Floating credential card -->
-                        <div class="absolute -bottom-6 -right-4 glass rounded-2xl px-4 py-3 shadow-xl">
-                            <div class="flex items-center gap-3">
-                                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-400 to-brand-600 flex items-center justify-center">
-                                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
-                                </div>
-                                <div>
-                                    <div class="text-xs text-white/60">Bachelor's Degree</div>
-                                    <div class="text-sm font-bold">Marketing Admin</div>
-                                </div>
+                                <h3 class="text-2xl font-bold">The Strategic Partner</h3>
+                                <p class="text-brand-300 mt-1 text-sm">Bachelor's in Marketing Administration</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Content -->
                 <div class="reveal lg:col-span-3 space-y-8">
                     <div>
-                        <span class="text-brand-400 font-semibold text-sm tracking-widest uppercase mb-4 block">About Me</span>
+                        <span class="text-brand-400 font-semibold text-sm tracking-widest uppercase mb-4 block">Executive Summary</span>
                         <h2 class="text-4xl lg:text-5xl font-extrabold leading-tight mb-6">
-                            Hi, I'm <span class="gradient-text">Liezel Ann</span> — let's grow your brand together.
+                            I don't just manage tasks—I manage <span class="gradient-text">results</span>.
                         </h2>
                         <p class="text-white/70 leading-relaxed mb-4 text-lg">
-                            I'm a passionate <strong class="text-brand-300">Marketing Virtual Assistant</strong> with a Bachelor's degree in <strong class="text-brand-300">Marketing Administration</strong> and over <strong class="text-brand-300">5 years of hands-on experience</strong> helping businesses craft winning marketing strategies, reach the right audiences, and turn insights into measurable growth.
-                        </p>
-                        <p class="text-white/60 leading-relaxed mb-4">
-                            My approach blends <em>analytical thinking</em> with <em>creative execution</em>. Whether it's developing a go-to-market strategy, conducting in-depth market research, managing digital campaigns, or crafting compelling presentations — I bring structure, clarity, and results to every project I touch.
+                            With over <strong class="text-brand-300">5 years of hands-on marketing experience</strong> and a formal degree in <strong class="text-brand-300">Marketing Administration</strong>, I specialize in taking the complex marketing workload off founders' shoulders.
                         </p>
                         <p class="text-white/60 leading-relaxed">
-                            I thrive in fast-paced environments and love being the reliable partner behind every successful brand. From startups looking for direction to established businesses scaling their reach, I'm here to take the marketing weight off your shoulders so you can focus on what you do best.
+                            Most Virtual Assistants are order-takers. I position myself as a **Strategic Partner**. I analyze your current funnel, research your competitors, and execute campaigns that turn passive followers into active leads. My background allows me to think like a Marketing Manager while executing with the precision of an expert VA.
                         </p>
                     </div>
 
-                    <!-- Education Card -->
-                    <div class="glass rounded-2xl p-6 border-l-4 border-brand-500">
-                        <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-xl bg-brand-500/20 flex items-center justify-center flex-shrink-0">
-                                <svg class="w-6 h-6 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"/></svg>
-                            </div>
-                            <div>
-                                <div class="text-xs text-brand-400 font-semibold tracking-widest uppercase mb-1">Education</div>
-                                <h4 class="text-lg font-bold mb-1">Bachelor's Degree in Marketing Administration</h4>
-                                <p class="text-white/50 text-sm">4-Year Program · Graduate</p>
-                            </div>
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div class="glass rounded-2xl p-6 border-l-4 border-brand-500">
+                             <h4 class="text-lg font-bold mb-1">95% Strategy Fit</h4>
+                             <p class="text-white/50 text-sm">Aligning daily tasks with your long-term ROI goals.</p>
+                        </div>
+                        <div class="glass rounded-2xl p-6 border-l-4 border-brand-400">
+                             <h4 class="text-lg font-bold mb-1">Data-Driven</h4>
+                             <p class="text-white/50 text-sm">Decisions backed by market research and metrics.</p>
                         </div>
                     </div>
 
-                    <!-- Core Expertise Pills -->
-                    <div>
-                        <h4 class="text-xs text-brand-400 font-semibold tracking-widest uppercase mb-4">Core Expertise</h4>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="glass px-4 py-2 rounded-full text-sm border border-brand-500/20 hover:border-brand-400/50 hover:bg-brand-500/10 transition-all cursor-default">📈 Marketing Strategy Development</span>
-                            <span class="glass px-4 py-2 rounded-full text-sm border border-brand-500/20 hover:border-brand-400/50 hover:bg-brand-500/10 transition-all cursor-default">🔍 Market Research & Analysis</span>
-                            <span class="glass px-4 py-2 rounded-full text-sm border border-brand-500/20 hover:border-brand-400/50 hover:bg-brand-500/10 transition-all cursor-default">💻 Digital Marketing</span>
-                            <span class="glass px-4 py-2 rounded-full text-sm border border-brand-500/20 hover:border-brand-400/50 hover:bg-brand-500/10 transition-all cursor-default">🎯 Communication & Presentation</span>
-                            <span class="glass px-4 py-2 rounded-full text-sm border border-brand-500/20 hover:border-brand-400/50 hover:bg-brand-500/10 transition-all cursor-default">🧠 Problem-Solving & Critical Thinking</span>
-                        </div>
-                    </div>
-
-                    <!-- Skills with Progress Bars -->
                     <div class="space-y-4">
-                        <h4 class="text-xs text-brand-400 font-semibold tracking-widest uppercase mb-2">Proficiency Levels</h4>
+                        <h4 class="text-xs text-brand-400 font-semibold tracking-widest uppercase mb-2">Technical Proficiency</h4>
                         <div>
                             <div class="flex justify-between text-sm mb-2">
-                                <span class="text-white/80 font-medium">Marketing Strategy Development</span>
+                                <span class="text-white/80 font-medium">Marketing Strategy & Funnel Design</span>
                                 <span class="text-brand-400 font-bold">95%</span>
                             </div>
                             <div class="h-2 bg-white/10 rounded-full overflow-hidden">
-                                <div class="skill-fill h-full bg-gradient-to-r from-brand-500 to-brand-400 rounded-full" data-width="95"></div>
+                                <div class="skill-fill h-full bg-gradient-to-r from-brand-500 to-brand-400 rounded-full transition-all duration-1000 ease-out" data-width="95" style="width: 0"></div>
                             </div>
                         </div>
                         <div>
                             <div class="flex justify-between text-sm mb-2">
-                                <span class="text-white/80 font-medium">Market Research & Analysis</span>
+                                <span class="text-white/80 font-medium">Market Research & Competitive Analysis</span>
                                 <span class="text-brand-400 font-bold">92%</span>
                             </div>
                             <div class="h-2 bg-white/10 rounded-full overflow-hidden">
-                                <div class="skill-fill h-full bg-gradient-to-r from-brand-500 to-brand-400 rounded-full" data-width="92"></div>
+                                <div class="skill-fill h-full bg-gradient-to-r from-brand-500 to-brand-400 rounded-full transition-all duration-1000 ease-out" data-width="92" style="width: 0"></div>
                             </div>
                         </div>
                         <div>
                             <div class="flex justify-between text-sm mb-2">
-                                <span class="text-white/80 font-medium">Digital Marketing</span>
+                                <span class="text-white/80 font-medium">Digital Advertising (Social/Search)</span>
                                 <span class="text-brand-400 font-bold">90%</span>
                             </div>
                             <div class="h-2 bg-white/10 rounded-full overflow-hidden">
-                                <div class="skill-fill h-full bg-gradient-to-r from-brand-500 to-brand-400 rounded-full" data-width="90"></div>
+                                <div class="skill-fill h-full bg-gradient-to-r from-brand-500 to-brand-400 rounded-full transition-all duration-1000 ease-out" data-width="90" style="width: 0"></div>
                             </div>
                         </div>
-                        <div>
-                            <div class="flex justify-between text-sm mb-2">
-                                <span class="text-white/80 font-medium">Communication & Presentation</span>
-                                <span class="text-brand-400 font-bold">96%</span>
-                            </div>
-                            <div class="h-2 bg-white/10 rounded-full overflow-hidden">
-                                <div class="skill-fill h-full bg-gradient-to-r from-brand-500 to-brand-400 rounded-full" data-width="96"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between text-sm mb-2">
-                                <span class="text-white/80 font-medium">Problem-Solving & Critical Thinking</span>
-                                <span class="text-brand-400 font-bold">93%</span>
-                            </div>
-                            <div class="h-2 bg-white/10 rounded-full overflow-hidden">
-                                <div class="skill-fill h-full bg-gradient-to-r from-brand-500 to-brand-400 rounded-full" data-width="93"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- College Involvement -->
-                    <div>
-                        <h4 class="text-xs text-brand-400 font-semibold tracking-widest uppercase mb-4">Leadership & Involvement</h4>
-                        <div class="grid sm:grid-cols-2 gap-3">
-                            <div class="glass rounded-xl p-4 flex items-start gap-3 hover:border-brand-400/30 transition-all">
-                                <div class="w-8 h-8 rounded-lg bg-brand-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                                    <svg class="w-4 h-4 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
-                                </div>
-                                <div>
-                                    <div class="font-semibold text-sm">Business Admin Student Org</div>
-                                    <div class="text-xs text-white/50 mt-0.5">Active Member</div>
-                                </div>
-                            </div>
-                            <div class="glass rounded-xl p-4 flex items-start gap-3 hover:border-brand-400/30 transition-all">
-                                <div class="w-8 h-8 rounded-lg bg-brand-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                                    <svg class="w-4 h-4 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
-                                </div>
-                                <div>
-                                    <div class="font-semibold text-sm">Marketing & Sales Competitions</div>
-                                    <div class="text-xs text-white/50 mt-0.5">Competitor</div>
-                                </div>
-                            </div>
-                            <div class="glass rounded-xl p-4 flex items-start gap-3 hover:border-brand-400/30 transition-all">
-                                <div class="w-8 h-8 rounded-lg bg-brand-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                                    <svg class="w-4 h-4 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                                </div>
-                                <div>
-                                    <div class="font-semibold text-sm">Event Planning Committee</div>
-                                    <div class="text-xs text-white/50 mt-0.5">Marketing Lead</div>
-                                </div>
-                            </div>
-                            <div class="glass rounded-xl p-4 flex items-start gap-3 hover:border-brand-400/30 transition-all">
-                                <div class="w-8 h-8 rounded-lg bg-brand-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                                    <svg class="w-4 h-4 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
-                                </div>
-                                <div>
-                                    <div class="font-semibold text-sm">University Events & Fairs</div>
-                                    <div class="text-xs text-white/50 mt-0.5">Volunteer</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Personal Philosophy -->
-                    <div class="glass rounded-2xl p-6 border border-brand-500/20 relative overflow-hidden">
-                        <div class="absolute top-0 right-0 w-24 h-24 bg-brand-500/10 rounded-full blur-2xl"></div>
-                        <svg class="w-8 h-8 text-brand-400/40 mb-3" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
-                        <p class="text-white/80 italic leading-relaxed relative">
-                            "Great marketing isn't about shouting the loudest — it's about understanding people deeply, communicating clearly, and showing up consistently. That's exactly what I do for every client I work with."
-                        </p>
-                        <p class="text-brand-300 text-sm font-semibold mt-3">— Liezel Ann Villanueva</p>
-                    </div>
-
-                    <!-- CTA -->
-                    <div class="flex flex-col sm:flex-row gap-4 pt-2">
-                        <a href="#contact" class="inline-flex items-center justify-center gap-2 bg-brand-500 text-white px-7 py-3.5 rounded-2xl font-bold hover:bg-brand-400 transition-all shadow-xl shadow-brand-500/30 hover:-translate-y-0.5">
-                            Let's Work Together
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-                        </a>
-                        <a href="#services" class="inline-flex items-center justify-center gap-2 glass px-7 py-3.5 rounded-2xl font-semibold hover:bg-white/5 transition-all">
-                            View My Services
-                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ==================== SERVICES ==================== -->
     <section id="services" class="py-24 lg:py-32">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-16 reveal">
-                <span class="text-brand-400 font-semibold text-sm tracking-widest uppercase mb-4 block">Services</span>
-                <h2 class="text-4xl lg:text-5xl font-extrabold mb-6">What I <span class="gradient-text">Offer</span></h2>
-                <p class="text-white/50 text-lg">Everything you need to run your business smoothly.</p>
+                <span class="text-brand-400 font-semibold text-sm tracking-widest uppercase mb-4 block">Services Portfolio</span>
+                <h2 class="text-4xl lg:text-5xl font-extrabold mb-6">High-Impact <span class="gradient-text">Marketing Ops</span></h2>
+                <p class="text-white/50 text-lg">Specialized support designed to scale your business, not just manage it.</p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="reveal card-3d glass rounded-3xl p-8 group">
                     <div class="w-14 h-14 bg-brand-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand-500/30 transition-colors">
-                        <svg class="w-7 h-7 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                        <svg class="w-7 h-7 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"/></svg>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Calendar Management</h3>
-                    <p class="text-white/50 text-sm leading-relaxed">Expert scheduling across time zones using Google Calendar, Outlook & Calendly.</p>
+                    <h3 class="text-xl font-bold text-white mb-3">Market Research & Analysis</h3>
+                    <p class="text-white/50 text-sm leading-relaxed">In-depth competitive benchmarking, target audience profiling, and data-driven insights to guide your next big move.</p>
                 </div>
 
                 <div class="reveal card-3d glass rounded-3xl p-8 group" style="transition-delay: 0.1s;">
                     <div class="w-14 h-14 bg-brand-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand-500/30 transition-colors">
                         <svg class="w-7 h-7 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Email Management</h3>
-                    <p class="text-white/50 text-sm leading-relaxed">Inbox organization, filtering, and drafting professional responses.</p>
+                    <h3 class="text-xl font-bold text-white mb-3">Email Marketing Strategy</h3>
+                    <p class="text-white/50 text-sm leading-relaxed">Full lifecycle management: from newsletter creation and list segmentation to high-converting automated nurture sequences.</p>
                 </div>
 
                 <div class="reveal card-3d glass rounded-3xl p-8 group" style="transition-delay: 0.2s;">
                     <div class="w-14 h-14 bg-brand-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand-500/30 transition-colors">
-                        <svg class="w-7 h-7 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                        <svg class="w-7 h-7 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">CRM Management</h3>
-                    <p class="text-white/50 text-sm leading-relaxed">HubSpot, Salesforce, Pipedrive setup and data management.</p>
+                    <h3 class="text-xl font-bold text-white mb-3">Lead Lifecycle & CRM Ops</h3>
+                    <p class="text-white/50 text-sm leading-relaxed">Streamlining your HubSpot, Salesforce, or Pipedrive pipelines to ensure no lead falls through the cracks.</p>
                 </div>
 
                 <div class="reveal card-3d glass rounded-3xl p-8 group" style="transition-delay: 0.3s;">
                     <div class="w-14 h-14 bg-brand-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand-500/30 transition-colors">
                         <svg class="w-7 h-7 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Project Coordination</h3>
-                    <p class="text-white/50 text-sm leading-relaxed">Task tracking, timeline management using Asana, Trello & Monday.</p>
+                    <h3 class="text-xl font-bold text-white mb-3">Launch & Project Coordination</h3>
+                    <p class="text-white/50 text-sm leading-relaxed">Managing marketing timelines using Asana/Trello to ensure your product launches and campaigns hit every deadline.</p>
                 </div>
 
                 <div class="reveal card-3d glass rounded-3xl p-8 group" style="transition-delay: 0.4s;">
                     <div class="w-14 h-14 bg-brand-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand-500/30 transition-colors">
-                        <svg class="w-7 h-7 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                        <svg class="w-7 h-7 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10l4 4v10a2 2 0 01-2 2z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 4v4h4"/></svg>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Document Handling</h3>
-                    <p class="text-white/50 text-sm leading-relaxed">Google Workspace, MS Office, data entry and report generation.</p>
+                    <h3 class="text-xl font-bold text-white mb-3">Content & Social Planning</h3>
+                    <p class="text-white/50 text-sm leading-relaxed">Strategic social media scheduling and content calendar development aligned with your primary business objectives.</p>
                 </div>
 
                 <div class="reveal card-3d glass rounded-3xl p-8 group" style="transition-delay: 0.5s;">
                     <div class="w-14 h-14 bg-brand-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand-500/30 transition-colors">
-                        <svg class="w-7 h-7 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        <svg class="w-7 h-7 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"/></svg>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Travel & Booking</h3>
-                    <p class="text-white/50 text-sm leading-relaxed">Flights, hotels, car rentals and complete itinerary planning.</p>
+                    <h3 class="text-xl font-bold text-white mb-3">Marketing Deck Design</h3>
+                    <p class="text-white/50 text-sm leading-relaxed">Transforming complex data into high-impact visual presentations for stakeholders, investors, or potential clients.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ==================== WORK / PORTFOLIO ==================== -->
     <section id="work" class="py-24 lg:py-32">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-16 reveal">
-                <span class="text-brand-400 font-semibold text-sm tracking-widest uppercase mb-4 block">Portfolio</span>
-                <h2 class="text-4xl lg:text-5xl font-extrabold mb-6">Recent <span class="gradient-text">Work</span></h2>
-                <p class="text-white/50 text-lg">Real results for real clients.</p>
+                <span class="text-brand-400 font-semibold text-sm tracking-widest uppercase mb-4 block">Proof of Concept</span>
+                <h2 class="text-4xl lg:text-5xl font-extrabold mb-6">Measured <span class="gradient-text">Performance</span></h2>
+                <p class="text-white/50 text-lg">Tangible results delivered for industry-leading clients.</p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-8">
                 <div class="reveal card-3d glass rounded-3xl overflow-hidden group">
                     <div class="aspect-video bg-gradient-to-br from-brand-500/40 to-brand-700/40 relative">
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <svg class="w-16 h-16 text-white/20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                        </div>
+                         <div class="absolute inset-0 flex items-center justify-center text-white/10 text-6xl font-black">ROI</div>
                     </div>
                     <div class="p-8">
                         <div class="flex items-center gap-3 mb-4">
-                            <span class="bg-brand-500/20 text-brand-300 text-xs font-bold px-3 py-1 rounded-full">SaaS Startup</span>
-                            <span class="text-white/30 text-xs">2 months</span>
+                            <span class="bg-brand-500/20 text-brand-300 text-xs font-bold px-3 py-1 rounded-full">SaaS Growth</span>
                         </div>
-                        <h3 class="text-lg font-bold text-white mb-3 group-hover:text-brand-400 transition-colors">Executive Scheduling for CEO</h3>
-                        <p class="text-white/50 text-sm leading-relaxed mb-6">Managed calendar with 30+ weekly meetings across 3 time zones, reducing conflicts by 100%.</p>
+                        <h3 class="text-lg font-bold text-white mb-3 group-hover:text-brand-400 transition-colors">Email Automation & Nurture Overhaul</h3>
+                        <p class="text-white/50 text-sm leading-relaxed mb-6">Restructured the entire welcome sequence and lead magnet funnel, focusing on segmentation and trigger-based messaging.</p>
                         <span class="text-brand-400 font-semibold text-sm flex items-center gap-2">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
-                            +40% productivity
+                            +22% Conversion Rate
                         </span>
                     </div>
                 </div>
 
                 <div class="reveal card-3d glass rounded-3xl overflow-hidden group" style="transition-delay: 0.1s;">
                     <div class="aspect-video bg-gradient-to-br from-blue-500/40 to-indigo-700/40 relative">
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <svg class="w-16 h-16 text-white/20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-                        </div>
+                         <div class="absolute inset-0 flex items-center justify-center text-white/10 text-6xl font-black">KPI</div>
                     </div>
                     <div class="p-8">
                         <div class="flex items-center gap-3 mb-4">
-                            <span class="bg-brand-500/20 text-brand-300 text-xs font-bold px-3 py-1 rounded-full">E-Commerce</span>
-                            <span class="text-white/30 text-xs">6 months</span>
+                            <span class="bg-brand-500/20 text-brand-300 text-xs font-bold px-3 py-1 rounded-full">E-Commerce Strategy</span>
                         </div>
-                        <h3 class="text-lg font-bold text-white mb-3 group-hover:text-brand-400 transition-colors">Email & Support System</h3>
-                        <p class="text-white/50 text-sm leading-relaxed mb-6">Handled 200+ daily tickets with 95% satisfaction and 2-hour response time.</p>
+                        <h3 class="text-lg font-bold text-white mb-3 group-hover:text-brand-400 transition-colors">Competitive Landscape & Market Positioning</h3>
+                        <p class="text-white/50 text-sm leading-relaxed mb-6">Conducted deep-dive research into top 5 competitors, identifying a "blue ocean" pricing and content gap for the brand.</p>
                         <span class="text-brand-400 font-semibold text-sm flex items-center gap-2">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                            95% satisfaction rate
+                            Optimized Ad Spend by 18%
                         </span>
                     </div>
                 </div>
@@ -649,17 +451,16 @@
         </div>
     </section>
 
-    <!-- ==================== CONTACT ==================== -->
     <section id="contact" class="py-24 lg:py-32">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-16">
                 <div class="reveal">
-                    <span class="text-brand-400 font-semibold text-sm tracking-widest uppercase mb-4 block">Contact</span>
+                    <span class="text-brand-400 font-semibold text-sm tracking-widest uppercase mb-4 block">Let's Connect</span>
                     <h2 class="text-4xl lg:text-5xl font-extrabold leading-tight mb-6">
-                        Let's <span class="gradient-text">Connect</span>
+                        Ready to <span class="gradient-text">Grow?</span>
                     </h2>
                     <p class="text-white/50 text-lg leading-relaxed mb-10">
-                        Have a project in mind? I'd love to hear from you. I'll get back within 24 hours.
+                        Stop managing your marketing and start growing your business. Reach out for a discovery call to see how we can align.
                     </p>
 
                     <div class="space-y-6">
@@ -668,17 +469,8 @@
                                 <svg class="w-5 h-5 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
                             </div>
                             <div>
-                                <p class="text-white/30 text-sm">Email</p>
+                                <p class="text-white/30 text-sm">Direct Email</p>
                                 <p class="text-white font-medium group-hover:text-brand-300 transition-colors">romerobella808@gmail.com</p>
-                            </div>
-                        </a>
-                        <a href="tel:+639163961196" class="flex items-center gap-4 group">
-                            <div class="w-12 h-12 glass rounded-2xl flex items-center justify-center group-hover:bg-brand-500/20 transition-colors">
-                                <svg class="w-5 h-5 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-                            </div>
-                            <div>
-                                <p class="text-white/30 text-sm">Phone</p>
-                                <p class="text-white font-medium group-hover:text-brand-300 transition-colors">+63 916 396 1196</p>
                             </div>
                         </a>
                         <a href="https://www.linkedin.com/in/liezel-ann-villanueva" target="_blank" rel="noopener" class="flex items-center gap-4 group">
@@ -686,7 +478,7 @@
                                 <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
                             </div>
                             <div>
-                                <p class="text-white/30 text-sm">LinkedIn</p>
+                                <p class="text-white/30 text-sm">LinkedIn Professional</p>
                                 <p class="text-white font-medium group-hover:text-brand-300 transition-colors">Liezel Ann Villanueva</p>
                             </div>
                         </a>
@@ -695,25 +487,9 @@
                                 <svg class="w-5 h-5 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                             </div>
                             <div>
-                                <p class="text-white/30 text-sm">Hours</p>
+                                <p class="text-white/30 text-sm">Availability</p>
                                 <p class="text-white font-medium">Mon – Fri, 9 AM – 6 PM PHT</p>
                             </div>
-                        </div>
-                    </div>
-
-                    <!-- Social Icons Row -->
-                    <div class="mt-8 pt-8 border-t border-white/10">
-                        <p class="text-white/40 text-sm mb-4">Connect with me</p>
-                        <div class="flex items-center gap-3">
-                            <a href="https://www.linkedin.com/in/liezel-ann-villanueva" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-11 h-11 glass rounded-xl flex items-center justify-center hover:bg-brand-500/20 hover:border-brand-400/40 hover:-translate-y-0.5 transition-all group">
-                                <svg class="w-5 h-5 text-brand-400 group-hover:text-brand-300" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                            </a>
-                            <a href="mailto:romerobella808@gmail.com" aria-label="Email" class="w-11 h-11 glass rounded-xl flex items-center justify-center hover:bg-brand-500/20 hover:border-brand-400/40 hover:-translate-y-0.5 transition-all group">
-                                <svg class="w-5 h-5 text-brand-400 group-hover:text-brand-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-                            </a>
-                            <a href="tel:+639163961196" aria-label="Phone" class="w-11 h-11 glass rounded-xl flex items-center justify-center hover:bg-brand-500/20 hover:border-brand-400/40 hover:-translate-y-0.5 transition-all group">
-                                <svg class="w-5 h-5 text-brand-400 group-hover:text-brand-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -731,15 +507,15 @@
                             </div>
                         </div>
                         <div class="mb-6">
-                            <label class="block text-sm font-medium text-white/70 mb-2">Email</label>
-                            <input type="email" required class="w-full px-4 py-3.5 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-white/30 focus:outline-none focus:ring-2 focus:ring-brand-500/50 focus:border-brand-500 transition-all" placeholder="john@example.com">
+                            <label class="block text-sm font-medium text-white/70 mb-2">Business Email</label>
+                            <input type="email" required class="w-full px-4 py-3.5 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-white/30 focus:outline-none focus:ring-2 focus:ring-brand-500/50 focus:border-brand-500 transition-all" placeholder="john@company.com">
                         </div>
                         <div class="mb-6">
-                            <label class="block text-sm font-medium text-white/70 mb-2">Message</label>
-                            <textarea rows="5" required class="w-full px-4 py-3.5 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-white/30 focus:outline-none focus:ring-2 focus:ring-brand-500/50 focus:border-brand-500 transition-all resize-none" placeholder="Tell me about your project..."></textarea>
+                            <label class="block text-sm font-medium text-white/70 mb-2">Tell me about your growth goals</label>
+                            <textarea rows="5" required class="w-full px-4 py-3.5 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-white/30 focus:outline-none focus:ring-2 focus:ring-brand-500/50 focus:border-brand-500 transition-all resize-none" placeholder="I need help with..."></textarea>
                         </div>
                         <button type="submit" class="w-full inline-flex items-center justify-center gap-2 bg-brand-500 text-white px-8 py-4 rounded-2xl font-bold hover:bg-brand-400 transition-all shadow-xl shadow-brand-500/30">
-                            Send Message
+                            Book Discovery Call
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                         </button>
                         <div id="formMessage" class="hidden mt-4 text-center text-sm font-medium"></div>
@@ -749,7 +525,6 @@
         </div>
     </section>
 
-    <!-- ==================== FOOTER ==================== -->
     <footer class="border-t border-white/10 py-12">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="flex flex-col md:flex-row items-center justify-between gap-6">
@@ -762,28 +537,11 @@
                     <span class="text-lg font-bold text-white">Liezel<span class="text-brand-400">Ann</span></span>
                 </a>
 
-                <nav class="flex items-center gap-6 md:gap-8">
-                    <a href="#about" class="text-white/40 hover:text-brand-400 text-sm transition-colors">About</a>
-                    <a href="#services" class="text-white/40 hover:text-brand-400 text-sm transition-colors">Services</a>
-                    <a href="#work" class="text-white/40 hover:text-brand-400 text-sm transition-colors">Work</a>
-                    <a href="#contact" class="text-white/40 hover:text-brand-400 text-sm transition-colors">Contact</a>
-                </nav>
-
-                <div class="flex items-center gap-3">
-                    <a href="https://www.linkedin.com/in/liezel-ann-villanueva" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-9 h-9 glass rounded-lg flex items-center justify-center hover:bg-brand-500/20 hover:border-brand-400/40 transition-all">
-                        <svg class="w-4 h-4 text-brand-400" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                    </a>
-                    <a href="mailto:romerobella808@gmail.com" aria-label="Email" class="w-9 h-9 glass rounded-lg flex items-center justify-center hover:bg-brand-500/20 hover:border-brand-400/40 transition-all">
-                        <svg class="w-4 h-4 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-                    </a>
-                </div>
-
-                <p class="text-white/20 text-sm">© 2026 Liezel Ann Villanueva</p>
+                <p class="text-white/20 text-sm">© 2026 Strategic Marketing Support. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- ==================== SCRIPTS ==================== -->
     <script>
         // ===== THREE.JS 3D BACKGROUND =====
         (function() {
@@ -795,7 +553,6 @@
             renderer.setSize(window.innerWidth, window.innerHeight);
             renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
             
-            // Create geometric shapes
             const geometry = new THREE.IcosahedronGeometry(1, 1);
             const material = new THREE.MeshBasicMaterial({ 
                 color: 0x3b82f6, 
@@ -812,14 +569,11 @@
                 mesh.position.x = (Math.random() - 0.5) * 20;
                 mesh.position.y = (Math.random() - 0.5) * 20;
                 mesh.position.z = (Math.random() - 0.5) * 15 - 5;
-                mesh.rotation.x = Math.random() * Math.PI;
-                mesh.rotation.y = Math.random() * Math.PI;
                 const scale = Math.random() * 1.5 + 0.5;
                 mesh.scale.set(scale, scale, scale);
                 mesh.userData = {
                     speedX: (Math.random() - 0.5) * 0.005,
                     speedY: (Math.random() - 0.5) * 0.005,
-                    speedZ: (Math.random() - 0.5) * 0.005,
                     rotSpeedX: (Math.random() - 0.5) * 0.01,
                     rotSpeedY: (Math.random() - 0.5) * 0.01
                 };
@@ -827,74 +581,30 @@
                 shapes.push(mesh);
             }
             
-            // Particles
-            const particlesGeo = new THREE.BufferGeometry();
-            const particlesCount = window.innerWidth < 768 ? 200 : 500;
-            const posArray = new Float32Array(particlesCount * 3);
-            
-            for (let i = 0; i < particlesCount * 3; i++) {
-                posArray[i] = (Math.random() - 0.5) * 30;
-            }
-            
-            particlesGeo.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
-            const particlesMat = new THREE.PointsMaterial({
-                size: 0.02,
-                color: 0x60a5fa,
-                transparent: true,
-                opacity: 0.6
-            });
-            const particlesMesh = new THREE.Points(particlesGeo, particlesMat);
-            scene.add(particlesMesh);
-            
             camera.position.z = 8;
-            
-            // Mouse interaction
-            let mouseX = 0;
-            let mouseY = 0;
-            
+            let mouseX = 0, mouseY = 0;
             document.addEventListener('mousemove', (e) => {
                 mouseX = (e.clientX / window.innerWidth) * 2 - 1;
                 mouseY = -(e.clientY / window.innerHeight) * 2 + 1;
             });
             
-            // Touch interaction
-            document.addEventListener('touchmove', (e) => {
-                if (e.touches.length > 0) {
-                    mouseX = (e.touches[0].clientX / window.innerWidth) * 2 - 1;
-                    mouseY = -(e.touches[0].clientY / window.innerHeight) * 2 + 1;
-                }
-            }, { passive: true });
-            
-            // Animation
             function animate() {
                 requestAnimationFrame(animate);
-                
                 shapes.forEach(shape => {
                     shape.rotation.x += shape.userData.rotSpeedX;
                     shape.rotation.y += shape.userData.rotSpeedY;
                     shape.position.x += shape.userData.speedX;
                     shape.position.y += shape.userData.speedY;
-                    shape.position.z += shape.userData.speedZ;
-                    
-                    // Boundary check
                     if (Math.abs(shape.position.x) > 12) shape.userData.speedX *= -1;
                     if (Math.abs(shape.position.y) > 12) shape.userData.speedY *= -1;
-                    if (Math.abs(shape.position.z) > 10) shape.userData.speedZ *= -1;
                 });
-                
-                particlesMesh.rotation.y += 0.0003;
-                particlesMesh.rotation.x += 0.0001;
-                
-                // Camera follows mouse
                 camera.position.x += (mouseX * 0.5 - camera.position.x) * 0.02;
                 camera.position.y += (mouseY * 0.5 - camera.position.y) * 0.02;
                 camera.lookAt(scene.position);
-                
                 renderer.render(scene, camera);
             }
             animate();
             
-            // Resize handler
             window.addEventListener('resize', () => {
                 camera.aspect = window.innerWidth / window.innerHeight;
                 camera.updateProjectionMatrix();
@@ -902,18 +612,14 @@
             });
         })();
 
-        // ===== NAVBAR =====
+        // ===== NAVBAR & UI =====
         const header = document.getElementById('header');
         const hamburger = document.getElementById('menuToggle');
         const mobileMenu = document.getElementById('mobileMenu');
         let menuOpen = false;
 
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                header.classList.add('nav-scrolled');
-            } else {
-                header.classList.remove('nav-scrolled');
-            }
+            header.classList.toggle('nav-scrolled', window.scrollY > 50);
         });
 
         hamburger.addEventListener('click', () => {
@@ -922,94 +628,58 @@
             mobileMenu.classList.toggle('open', menuOpen);
         });
 
-        document.querySelectorAll('#mobileMenu a').forEach(link => {
-            link.addEventListener('click', () => {
-                menuOpen = false;
-                hamburger.classList.remove('active');
-                mobileMenu.classList.remove('open');
-            });
-        });
-
-        // ===== SCROLL REVEAL =====
         const revealObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                }
+                if (entry.isIntersecting) entry.target.classList.add('active');
             });
         }, { threshold: 0.1 });
-
         document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-        // ===== COUNTERS =====
+        const skillObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const bar = entry.target;
+                    bar.style.width = bar.getAttribute('data-width') + '%';
+                }
+            });
+        }, { threshold: 0.5 });
+        document.querySelectorAll('.skill-fill').forEach(bar => skillObserver.observe(bar));
+
         const counterObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     const el = entry.target;
                     const target = parseInt(el.getAttribute('data-target'));
-                    const duration = 2000;
-                    const start = performance.now();
-                    
-                    function update(now) {
-                        const elapsed = now - start;
-                        const progress = Math.min(elapsed / duration, 1);
-                        const ease = 1 - Math.pow(1 - progress, 3);
-                        el.textContent = Math.floor(ease * target) + '+';
-                        if (progress < 1) requestAnimationFrame(update);
-                    }
-                    requestAnimationFrame(update);
+                    let current = 0;
+                    const step = target / 50;
+                    const timer = setInterval(() => {
+                        current += step;
+                        if (current >= target) {
+                            el.textContent = target + '+';
+                            clearInterval(timer);
+                        } else {
+                            el.textContent = Math.floor(current) + '+';
+                        }
+                    }, 30);
                     counterObserver.unobserve(el);
                 }
             });
         }, { threshold: 0.5 });
-
         document.querySelectorAll('.counter-value').forEach(el => counterObserver.observe(el));
 
-        // ===== SKILL BARS =====
-        const skillObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const bar = entry.target;
-                    setTimeout(() => {
-                        bar.style.width = bar.getAttribute('data-width') + '%';
-                    }, 200);
-                    skillObserver.unobserve(bar);
-                }
-            });
-        }, { threshold: 0.5 });
-
-        document.querySelectorAll('.skill-fill').forEach(bar => skillObserver.observe(bar));
-
-        // ===== SMOOTH SCROLL =====
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    const top = target.getBoundingClientRect().top + window.pageYOffset - 80;
-                    window.scrollTo({ top, behavior: 'smooth' });
-                }
-            });
-        });
-
-        // ===== FORM =====
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
             const btn = this.querySelector('button[type="submit"]');
             const msg = document.getElementById('formMessage');
-            const original = btn.innerHTML;
-            
-            btn.innerHTML = '<span class="animate-spin">⏳</span> Sending...';
+            btn.innerHTML = 'Sending...';
             btn.disabled = true;
-            
             setTimeout(() => {
-                msg.classList.remove('hidden', 'text-red-400');
+                msg.classList.remove('hidden');
                 msg.classList.add('text-green-400');
-                msg.textContent = '✓ Message sent! I\'ll get back to you soon.';
-                btn.innerHTML = original;
+                msg.textContent = '✓ Growth request sent! Expect a reply in 24 hours.';
+                btn.innerHTML = 'Book Discovery Call';
                 btn.disabled = false;
                 this.reset();
-                setTimeout(() => msg.classList.add('hidden'), 5000);
             }, 1500);
         });
     </script>
